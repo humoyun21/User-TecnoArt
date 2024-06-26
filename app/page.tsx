@@ -37,7 +37,7 @@ export default function Home() {
                     return (
                       <Link href={'/categories'} key={i} onClick={() => localStorage.setItem('CategoryId', JSON.stringify(e.id))}>
                           <div className='flex items-center justify-between w-[440px] h-[120px] py-[45px] px-[59px] bg-white rounded-xl cursor-pointer card'>
-                          <Image src={iconCategory[i]} alt='Logo' width={30} height={30}/>
+                          <Image src={iconCategory[i]} alt='Logo' width={30} height={30} className="w-[60px] h-[60px] bg-[#FF800B1A] rounded-full p-[20px] text-[#D55200]"/>
                           {e.name}
                           <ArrowRightOutlined />
                       </div>
@@ -47,7 +47,7 @@ export default function Home() {
                 }
                <Link href={'/categories'} onClick={() => localStorage.setItem('CategoryId', JSON.stringify(0))}>
                   <div  className='flex items-center justify-between w-[440px] h-[120px] py-[45px] px-[59px] bg-white rounded-xl cursor-pointer card'>
-                            <MenuOutlined />
+                            <MenuOutlined  className="w-[60px] h-[60px] bg-[#FF800B1A] rounded-full p-[20px] text-[#D55200]"/>
                               Hammasi
                               <ArrowRightOutlined />
                     </div>

@@ -1,8 +1,10 @@
 "use client"
 import React from 'react';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import 'swiper/css/autoplay';
+import 'swiper/css/navigation';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
