@@ -9,7 +9,7 @@ import Img from '../../images/Carusel.png';
 const App: React.FC = () => (
   <>
     <Container>
-      <Carousel arrows infinite={true} autoplay={true} className='rounded-lg overflow-hidden custom-carousel'>
+      <Carousel arrows infinite={true} autoplay={true} className='rounded-lg overflow-hidden custom-carousel '>
         <div>
           <div className='carousel'>
             <Image src={Text_img} width={631} height={180} alt='Text Image' className='pt-[92px] ml-[80px]'/>
