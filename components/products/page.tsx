@@ -1,5 +1,5 @@
 import {
-  BranchesOutlined,
+  ShoppingCartOutlined,
   BarChartOutlined,
   HeartOutlined,
 } from "@ant-design/icons";
@@ -20,7 +20,7 @@ function page() {
           className="w-[150px] h-[160px] mx-auto"
         />
         <p className="mt-[36px] text-[16px] mb-[16px]">
-          Kir yuvish mashinasi LG F2V7GW9T
+        Noutbuk Apple MacBook Pro 14 M1 MKGP3RU/A
         </p>
         <h4 className="font-bold text-[18px] ">29 699 999 so‘m</h4>
         <p className="text-[#1EB91E] mt-[11px] mb-[19px] bg-[#1EB91E14] inline-block py-2 px-4 rounded-lg">
@@ -28,7 +28,7 @@ function page() {
         </p>
         <div className="flex items-center justify-between gap-[10px]">
           <Button className="btn_product">
-            Savat <BranchesOutlined />
+            Savat <ShoppingCartOutlined />
           </Button>
           <Badge>
             <Avatar

@@ -4,7 +4,7 @@ import Container from "../container/page";
 import Image from "next/image";
 import LOGO from "../../images/LOGO.png";
 import { Button, Input, Avatar, Badge } from "antd";
-import { ArrowRightOutlined, BarChartOutlined, CloseSquareOutlined, HeartOutlined, PhoneOutlined, SearchOutlined, ShoppingCartOutlined, UnorderedListOutlined, UserOutlined } from "@ant-design/icons";
+import { ArrowRightOutlined, BarChartOutlined, CloseOutlined, HeartOutlined, PhoneOutlined, SearchOutlined, ShoppingCartOutlined, MenuOutlined, UserOutlined } from "@ant-design/icons";
 import "./style.css";
 import useCategoryStore from '@/store/categories/page';
 
@@ -71,9 +71,9 @@ function Index() {
               <Button onClick={() => setOpen(!open)} className="category_btn bg-[#1EB91E] text-white text-[14px] font-bold py-[15px] px-[36px] h-[46px]">
                   {
                     open?
-                    <CloseSquareOutlined className=" text-[18px]"/>
+                    <CloseOutlined className=" text-[18px]"/>
                     :
-                    <UnorderedListOutlined className=" text-[18px] rotate-180" />
+                    <MenuOutlined className=" text-[18px] rotate-180" />
                   }
                   Kategoriya
               </Button>
