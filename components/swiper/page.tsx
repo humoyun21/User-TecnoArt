@@ -15,10 +15,10 @@ export default function App() {
   return (
     <>
       <Swiper
+        spaceBetween={50}
         slidesPerView={4}
-        spaceBetween={30}
-        freeMode={true}
-        loop={true}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
         pagination={{
           clickable: true,
         }}
