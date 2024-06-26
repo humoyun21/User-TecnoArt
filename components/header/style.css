@@ -16,3 +16,7 @@
     border: none;
 }
 
+
+.card:hover .rasm > svg > path {
+    fill: #ffff !important; /* Change this to the desired color */
+}

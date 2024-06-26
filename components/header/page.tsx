@@ -65,6 +65,7 @@ function Index() {
               width={140}
               height={40}
               alt="Picture of the author"
+            
             />
 
             <div className="flex gap-[16px] items-center">

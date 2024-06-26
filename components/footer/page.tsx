@@ -1,8 +1,10 @@
+"use client"
 import React from 'react'
 import Container from '../container/page'
 import Logo from '../../images/LOGO.png'
 import Image from 'next/image'
 import { FacebookOutlined, InstagramOutlined, TwitterOutlined, WhatsAppOutlined } from '@ant-design/icons'
+import Link from 'next/link'
 
 function page() {
   return (
@@ -22,11 +24,11 @@ function page() {
                  <div>
                     <h2 className='text-[18px] font-bold '>Tashkilot haqida</h2>
                     <ul className='mt-[20px]'>
-                        <li className='text-[14px] font-medium text-[#240E0099] mb-[16px] hover:text-[black] cursor-pointer'>Texnoark haqida</li>
-                        <li className='text-[14px] font-medium text-[#240E0099] mb-[16px] hover:text-[black] cursor-pointer'>Muddatli to’lov</li>
-                        <li className='text-[14px] font-medium text-[#240E0099] mb-[16px] hover:text-[black] cursor-pointer'>Yordam</li>
-                        <li className='text-[14px] font-medium text-[#240E0099] mb-[16px] hover:text-[black] cursor-pointer'>Tovarlarga kafolat</li>
-                        <li className='text-[14px] font-medium text-[#240E0099] mb-[16px] hover:text-[black] cursor-pointer'>To‘lov usullari</li>
+                        <li onClick={() => localStorage.setItem('aboutus', 'Texnoark haqida')} className='text-[14px] font-medium text-[#240E0099] mb-[16px] hover:text-[black] cursor-pointer'><Link href={'/about'}>Texnoark haqida</Link></li>
+                        <li onClick={() => localStorage.setItem('aboutus', 'Muddatli to’lov')} className='text-[14px] font-medium text-[#240E0099] mb-[16px] hover:text-[black] cursor-pointer'><Link href={'/about'}>Muddatli to’lov</Link></li>
+                        <li onClick={() => localStorage.setItem('aboutus', 'Yordam')} className='text-[14px] font-medium text-[#240E0099] mb-[16px] hover:text-[black] cursor-pointer'><Link href={'/about'}>Yordam</Link></li>
+                        <li onClick={() => localStorage.setItem('aboutus', 'Tovarlarga kafolat')} className='text-[14px] font-medium text-[#240E0099] mb-[16px] hover:text-[black] cursor-pointer'><Link href={'/about'}>Tovarlarga kafolat</Link></li>
+                        <li onClick={() => localStorage.setItem('aboutus', 'To‘lov usullari')} className='text-[14px] font-medium text-[#240E0099] mb-[16px] hover:text-[black] cursor-pointer'><Link href={'/about'}>To‘lov usullari</Link></li>
                     </ul>
                 </div>
                 <div>

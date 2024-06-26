@@ -1,21 +1,21 @@
 import { create } from "zustand";
 import http from "../../api/interseptor";
-import { request_category } from "@/interfaces/categories";
+import { request_brands } from "@/interfaces/brands";
 
-const useCategoryStore = create <request_category> ((set) => ({
-    categories: [],
-    getCategories: async () => {
+const useCategoryStore = create <request_brands>((set) => ({
+    brands: [],
+    getBrands: async () => {
         try{
             const response = await http.get("/category/search");
-            set({ categories: response?.data?.data?.categories});
+            set({ brands: response?.data?.data?.brands});
         }catch(err){
             console.log(err);
         }
     },
-    getCategoryById: async (id) => {
+    getBrandsId: async (id) => {
         try{
             const response = await http.get(`/category/${id}`);
-            set({ categories: response?.data?.data?.categories});
+            set({ brands: response?.data?.data?.brands});
         }catch(err){
             console.log(err);
         }
